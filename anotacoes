@@ -1,0 +1,21 @@
+1) Vimos neste vídeo como criar um componente do blade é fácil e pode ser bastante útil.
+O que precisamos fazer para termos um componente do blade?
+
+Criar um arquivo .blade.php no diretório resources/views/components.
+Alternativa correta! Isso é o mínimo que precisamos fazer para criarmos componentes do blade.
+
+Neste vídeo nós criamos nosso primeiro componente e vimos alguns detalhes de como componentes do blade funcionam.
+ Vamos entender melhor alguns pontos.
+
+Nós temos 2 tipos de componentes. Os componentes baseados em classes e os componentes anônimos.
+Componentes anônimos são os que possuem apenas um arquivo de view, como o nosso caso do layout.
+Não é necessário criar uma classe para isso. Já os componentes baseados em classes possuem uma classe
+que pode manipular livremente os dados deste componente.
+
+Vimos neste vídeo como criar um componente baseado em classe com o comando make:component.
+Se quisermos criar um componente anônimo, como nosso layout, poderíamos executar
+php artisan make:component layout –view. Como não há classe, podemos deixar o nome em minúsculo mesmo.
+
+Caso a gente queira separar nosso componentes em pastas, como forms/input.blade.php, por exemplo,
+ podemos sem problemas. Na hora de utilizá-lo, vamos referenciá-lo como <x-forms.input>, usando o . como separador.
+ Assim podemos manter nossos componentes organizados.

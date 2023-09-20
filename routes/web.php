@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/series', [SeriesController::class, 'index']); //primeiro elemento é a classe, o segundo elemento é o nome da função
+Route::get('/series/criar', [SeriesController::class, 'create']); //primeiro elemento é a classe, o segundo elemento é o nome da função
